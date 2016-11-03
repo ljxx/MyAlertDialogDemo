@@ -21,7 +21,7 @@ public class MyDialogView extends Dialog {
 
     public MyDialogView(Context context, int mTime) {
         super(context, R.style.mydialog);
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.home_dialog_to_password, null);  //通过LayoutInflater获取布局
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.msg_ok_cancel, null);  //通过LayoutInflater获取布局
         mShowCenter = (TextView) view.findViewById(R.id.mShowCenter);
         mUPwdOk = (TextView) view.findViewById(R.id.mOk);
         mUPwdCancel = (TextView) view.findViewById(R.id.mCancel);

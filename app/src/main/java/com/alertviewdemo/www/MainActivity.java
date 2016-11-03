@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 final MyDialogView myDialog=new MyDialogView(MainActivity.this,5);
                 myDialog.setCancelable(false);
-                myDialog.setMessageCenter(Html.fromHtml("<font color='#666666'>恭喜您，注册成为赵涌在线用户，<br/>默认初始密码为123456，</font><font color='#AA5066'>" +
+                myDialog.setMessageCenter(Html.fromHtml("<font color='#666666'>恭喜您，注册成为蓝吉星讯用户，<br/>默认初始密码为123456，</font><font color='#AA5066'>" +
                         "<br/>为了您的账户安全，请及时修改密码。<br/>" +
                         "</font><font color='#666666'>确认修改密码，请点击确定</font>"));
                 myDialog.setOnOkListener(new View.OnClickListener() {
