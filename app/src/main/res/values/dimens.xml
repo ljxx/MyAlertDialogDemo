@@ -10,6 +10,9 @@
     <dimen name="px5">5dp</dimen>
     <dimen name="px8">8dp</dimen>
     <dimen name="px10">10dp</dimen>
+    <dimen name="px15">15dp</dimen>
+    <dimen name="px20">20dp</dimen>
+    <dimen name="px30">30dp</dimen>
 
     <!--字体-->
     <dimen name="sx16">16sp</dimen>

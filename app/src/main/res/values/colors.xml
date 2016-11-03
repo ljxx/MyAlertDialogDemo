@@ -10,4 +10,5 @@
     <color name="skyblue">#007AFF</color>
 
     <color name="hunt_line_color">#e7e6e4</color>
+    <color name="loading_background_color">#ee424242</color>
 </resources>

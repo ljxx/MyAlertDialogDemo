@@ -1,29 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.alertviewdemo.www.MainActivity">
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.alertviewdemo.www.MainActivity">
 
-    <TextView
-        android:id="@+id/mOkOrCancle01"
-        style="@style/mainTextStyle"
-        android:text="@string/mMsgOkOrCancle" />
+        <TextView
+            android:id="@+id/mOkOrCancle01"
+            style="@style/mainTextStyle"
+            android:text="@string/mMsgOkOrCancle" />
 
-    <TextView
-        style="@style/mainTextStyle"
-        android:text="Hello World!" />
+        <TextView
+            android:id="@+id/mLoading"
+            style="@style/mainTextStyle"
+            android:text="@string/mLoading" />
 
-    <TextView
-        style="@style/mainTextStyle"
-        android:text="Hello World!" />
+        <TextView
+            style="@style/mainTextStyle"
+            android:text="Hello World!" />
 
-    <TextView
-        style="@style/mainTextStyle"
-        android:text="Hello World!" />
+        <TextView
+            style="@style/mainTextStyle"
+            android:text="Hello World!" />
 
-    <TextView
-        style="@style/mainTextStyle"
-        android:text="Hello World!" />
-</LinearLayout>
+        <TextView
+            style="@style/mainTextStyle"
+            android:text="Hello World!" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mLoadingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px20"
+        android:paddingRight="@dimen/px20"
+        android:paddingTop="@dimen/px15"
+        android:paddingBottom="@dimen/px15"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/loading_background">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/common_loading3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="载入中..."
+            />
+    </LinearLayout>
+</FrameLayout>
+

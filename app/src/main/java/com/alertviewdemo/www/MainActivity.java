@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -11,7 +12,8 @@ import com.alertviewdemo.www.myview.MyDialogView;
 
 public class MainActivity extends Activity {
 
-    private TextView mOkOrCancle01;
+    private TextView mOkOrCancle01,mLoading;
+    private LinearLayout mLoadingLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +27,12 @@ public class MainActivity extends Activity {
 
     private void initUi() {
         mOkOrCancle01 = (TextView) findViewById(R.id.mOkOrCancle01);
+        mLoadingLayout = (LinearLayout) findViewById(R.id.mLoadingLayout);
+        mLoading = (TextView) findViewById(R.id.mLoading);
     }
 
     private void initListeren() {
+        //弹出框
         mOkOrCancle01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,6 +62,14 @@ public class MainActivity extends Activity {
                     }
                 });
                 myDialog.show();
+            }
+        });
+
+        //Loading 框
+        mLoading.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mLoadingLayout.setVisibility(View.VISIBLE);
             }
         });
     }
