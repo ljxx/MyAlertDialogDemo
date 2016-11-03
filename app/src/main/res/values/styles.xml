@@ -18,6 +18,13 @@
         <item name="android:padding">@dimen/px10</item>
         <item name="android:layout_marginBottom">@dimen/px10</item>
     </style>
+    
+    <style name="aleatTextStyle">
+        <item name="android:textSize">@dimen/sx16</item>
+        <item name="android:textColor">@color/skyblue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/px10</item>
+    </style>
 
     <style name="mydialog" parent="android:style/Theme.Dialog">
         <!-- 背景透明 -->

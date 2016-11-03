@@ -5,6 +5,25 @@
     android:background="@drawable/home_dialog_back_data"
     android:orientation="vertical"
     >
+    <LinearLayout
+        android:id="@+id/mTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/mTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/aleatTextStyle"
+            android:text="温馨提示"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:background="@color/hunt_line_color"
+            />
+    </LinearLayout>
     <TextView
         android:id="@+id/mShowCenter"
         android:layout_width="match_parent"
@@ -33,13 +52,11 @@
             android:layout_width="@dimen/px0"
             android:layout_weight="1.0"
             android:layout_height="wrap_content"
-            android:padding="@dimen/px10"
-            android:textColor="#007AFF"
-            android:gravity="center"
-            android:textSize="@dimen/sx16"
+            style="@style/aleatTextStyle"
             android:text="确定"
             />
         <View
+            android:id="@+id/mOkOrCancelLine"
             android:layout_width="@dimen/px1"
             android:layout_height="match_parent"
             android:background="@color/hunt_line_color"
@@ -49,10 +66,7 @@
             android:layout_width="@dimen/px0"
             android:layout_weight="1.0"
             android:layout_height="wrap_content"
-            android:padding="@dimen/px10"
-            android:textSize="@dimen/sx16"
-            android:textColor="#007AFF"
-            android:gravity="center"
+            style="@style/aleatTextStyle"
             android:text="取消"
             />
     </LinearLayout>
