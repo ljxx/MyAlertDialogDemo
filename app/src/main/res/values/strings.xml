@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyAlertDialogDemo</string>
+
+    <string name="mMsgOkOrCancle">无title,消息，确定和取消弹框</string>
+</resources>

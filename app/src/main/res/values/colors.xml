@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--文本-->
+    <color name="white">#ffffff</color>
+    <color name="grayback">#778899</color>
+
+    <color name="hunt_line_color">#e7e6e4</color>
+</resources>
